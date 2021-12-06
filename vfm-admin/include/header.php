@@ -38,9 +38,9 @@ if ($setUp->getConfig("show_head") !== true && $fulldesc == false) {
                 }
                 ?>
                 <div class="head-banner text-<?php echo $logoAlignment; ?>">
-                    <a href="<?php echo $setUp->getConfig("script_url"); ?>">
+                    <!-- <a href="<?php echo $setUp->getConfig("script_url"); ?>"> -->
                         <img alt="<?php print $setUp->getConfig('appname'); ?>" src="<?php print $logopath.$setUp->getConfig('logo'); ?>">
-                    </a>
+                    <!-- </a> -->
                 </div>
             <?php
             } 
