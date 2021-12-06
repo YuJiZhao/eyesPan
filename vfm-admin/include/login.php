@@ -19,7 +19,6 @@
 if (!$gateKeeper->isAccessAllowed()) { ?>
     <section class="vfmblock">
         <div class="login">
-
             <div class="panel panel-default">
                 <div class="panel-body">
                     <form enctype="multipart/form-data" method="post" role="form" 
@@ -58,7 +57,7 @@ if (!$gateKeeper->isAccessAllowed()) { ?>
                                 $capath = "vfm-admin/";
                                 include "vfm-admin/include/captcha.php"; 
                             }   ?>
-                            <button type="submit" class="btn btn-primary btn-block" />
+                            <button type="submit" class="btn btn-primary btn-block">
                                 <i class="fa fa-sign-in"></i> 
                                 <?php echo $encodeExplorer->getString("log_in"); ?>
                             </button>
@@ -84,7 +83,6 @@ if (!$gateKeeper->isAccessAllowed()) { ?>
 if ($gateKeeper->isAccessAllowed() 
     && $gateKeeper->showLoginBox()
 ) { ?>
-
         <section class="vfmblock">
             <form enctype="multipart/form-data" method="post" 
             action="<?php echo $encodeExplorer->makeLink(false, null, ""); ?>" class="form-inline" role="form">
@@ -109,7 +107,7 @@ if ($gateKeeper->isAccessAllowed()
         $capath = "vfm-admin/";
         include "vfm-admin/include/captcha.php"; 
     }   ?>
-                    <button type="submit" class="btn btn-primary" />
+                    <button type="submit" class="btn btn-primary">
                         <i class="fa fa-sign-in"></i> 
                         <?php echo $encodeExplorer->getString("log_in"); ?>
                     </button>
