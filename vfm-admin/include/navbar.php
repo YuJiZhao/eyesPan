@@ -18,7 +18,7 @@ $islogin = ($parent === "login.php" ? true : false);
 $stepback = $islogin ? '' : 'vfm-admin/';
 ?>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: rgba(255, 255, 255, 0.5);">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-vfm-menu">
@@ -32,11 +32,20 @@ $stepback = $islogin ? '' : 'vfm-admin/';
             * Brand button
             */
             ?>
-            <a class="navbar-brand" href="<?php echo $setUp->getConfig("script_url"); ?>">
+            <a 
+                class="navbar-brand"  
+                href="<?php echo $setUp->getConfig("script_url"); ?>"
+                style= "color: rgba(146,171,211)"
+            >
                 <?php echo $setUp->getConfig("appname"); ?>
             </a>
         </div>
         <div class="collapse navbar-collapse" id="collapse-vfm-menu">
+            <style>
+                .navbar-nav > li > a{
+                    color: rgb(146,171,211) !important
+                }
+            </style>
             <ul class="nav navbar-nav navbar-right">
 <?php
 /**
@@ -120,6 +129,12 @@ if ($setUp->showLangMenu()) { ?>
     <?php
     echo $encodeExplorer->printLangMenu($stepback);
     ?>
+                </li>
+                <li>
+                    <a href="https://blog.bugheaven.top" target="_blank">
+                        <i class="fa fa-drupal fa-fw"></i>
+                        <span>关于作者</span>
+                    </a>
                 </li>
     <?php
 } ?>

@@ -271,7 +271,6 @@ if ($setUp->getConfig("txt_direction") == "RTL") { ?>
 </div> <!-- container -->
 
     <?php $template->getPart('footer', ''); ?>
-    
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>

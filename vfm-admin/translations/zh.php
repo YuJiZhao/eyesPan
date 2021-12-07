@@ -32,7 +32,7 @@
   'available_space' => '空间容量',
   'available_space_exhausted' => '可用空间耗尽',
   'avatar' => '头像',
-  'browse' => '选择上传文件',
+  'browse' => '点击按钮上传文件',
   'can_notify_uploads' => ' 用户上传文件时邮件通知',
   'can_thumb' => '启动图像缩略图',
   'change_view' => 'ت更改视图',

@@ -30,18 +30,25 @@ if ($setUp->getConfig("show_head") !== true && $fulldesc == false) {
             * ************************************************
             */
             if ($setUp->getConfig("show_head") == true ) { 
-
                 if ($islogin == true) { 
                     $logopath = "images/";
                 } else {
                     $logopath = "vfm-admin/images/";
                 }
                 ?>
+                <style>
+                    .head-banner > img:hover {
+                        cursor: pointer;
+                    }
+                </style>
                 <div class="head-banner text-<?php echo $logoAlignment; ?>">
-                    <!-- <a href="<?php echo $setUp->getConfig("script_url"); ?>"> -->
-                        <img alt="<?php print $setUp->getConfig('appname'); ?>" src="<?php print $logopath.$setUp->getConfig('logo'); ?>">
-                    <!-- </a> -->
+                    <img alt="<?php print $setUp->getConfig('appname'); ?>" src="<?php print $logopath.$setUp->getConfig('logo'); ?>">
                 </div>
+                <script>
+                    document.querySelector(".head-banner > img").onclick = function() {
+                        console.log("hello");
+                    }
+                </script>
             <?php
             } 
             /**

@@ -43,7 +43,7 @@ if ($gateKeeper->isAccessAllowed() && $location->editAllowed()
                         <input name="userfile[]" type="file" class="upload_file" multiple />
                     </span>
                 </span>
-                <input class="form-control" type="text" readonly name="fileToUpload" id="fileToUpload" 
+                <input class="form-control" type="text" readonly name="fileToUpload" id="fileToUpload" style="background: none"
                 onchange="fileSelected();" placeholder="<?php echo $encodeExplorer->getString("browse"); ?>">
                 <span class="input-group-btn">
                     <button class="upload_sumbit btn btn-primary" type="submit" id="upformsubmit" disabled>
@@ -86,7 +86,7 @@ if ($gateKeeper->isAccessAllowed() && $location->editAllowed()
         <form enctype="multipart/form-data" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING']);?>">
             <div id="newdir_container" class="input-group pull-right <?php echo $class; ?>">
                 <span class="input-group-addon"><i class="fa fa-folder-open-o fa-fw"></i></span>
-                <input name="userdir" type="text" class="upload_dirname form-control" 
+                <input name="userdir" type="text" class="upload_dirname form-control" style="background: none"
                 placeholder="<?php echo $encodeExplorer->getString("make_directory"); ?>" />
                 <span class="input-group-btn">
                     <button class="btn btn-primary upfolder" type="submit">
@@ -107,7 +107,7 @@ if ($gateKeeper->isAccessAllowed() && $location->editAllowed()
             print " fullp";
         }
             print "\">"; ?>
-            <div class="progress progress-striped active" id="progress-up">
+            <div class="progress progress-striped active" id="progress-up" style="background: none">
                 <div class="upbar progress-bar <?php echo $setUp->getConfig('progress_color'); ?>" 
                     role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                     <p class="pull-left propercent"></p>

@@ -449,13 +449,13 @@ if ($gateKeeper->isAccessAllowed() && $location->editAllowed()) {
         ?>
         <section class="vfmblock tableblock text-center lead hidetable">
             <span class="fa-stack fa-4x alpha-light">
-                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <!-- <i class="fa fa-circle-thin fa-stack-2x"></i> -->
                 <?php
                 // show upload icon
                 if ($gateKeeper->isAllowed('upload_enable')) { 
-                    echo '<i class="fa fa-cloud-upload fa-stack-1x"></i>';
+                    // echo '<i class="fa fa-cloud-upload fa-stack-1x"></i>';
                 } else {
-                    echo '<i class="fa fa-folder-open fa-stack-1x"></i>';
+                    // echo '<i class="fa fa-folder-open fa-stack-1x"></i>';
                 } ?>
             </span>
         </section>

@@ -12,7 +12,7 @@
  * @license   Exclusively sold on CodeCanyon: http://bit.ly/veno-file-manager
  * @link      http://filemanager.veno.it/
  */ ?>
- <footer class="footer">
+ <footer class="footer" style="background: rgba(146,171,211)">
     <div class="container">
         <span class="pull-left"><a href="./">
             <?php print $setUp->getConfig("appname"); ?> </a> 

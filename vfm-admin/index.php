@@ -285,7 +285,7 @@ $share_lifetime = array(
     <footer class="main-footer">
         <div class="pull-right">
             <a href="http://filemanager.veno.it/" target="_blank" title="Current version">
-                <i class="vfmi vfmi-mark"></i> 
+                <i class="vfmi vfmi-mark"></i>
                 <small> <?php echo $vfm_version; ?></small>
             </a>
         </div>

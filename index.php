@@ -44,7 +44,7 @@ require_once 'vfm-admin/include/head.php';
         $bodyclass .= ' inlinethumbs';
     } ?>
 </head>
-    <body id="uparea" class="<?php echo $bodyclass; ?>">
+    <body id="uparea" class="<?php echo $bodyclass; ?>" style="background: none">
         <div class="overdrag"></div>
             <?php
             /**
@@ -123,5 +123,7 @@ require_once 'vfm-admin/include/head.php';
                 $template->getPart('load-js');
                 $template->getPart('modals');
             ?>
+        <script type="text/javascript" src="./vfm-admin/js/ribbon.js"></script>
+        <script type="text/javascript" src="./vfm-admin/js/click.js"></script>
     </body>
 </html>

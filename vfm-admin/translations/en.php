@@ -32,7 +32,7 @@
   'available_space' => 'Available space',
   'available_space_exhausted' => 'Available space exhausted',
   'avatar' => 'Avatar',
-  'browse' => 'Select file(s)',
+  'browse' => 'Click button and select file(s)',
   'can_notify_uploads' => 'send upload notifications between users',
   'can_thumb' => 'Image preview',
   'change_view' => 'Change view',
