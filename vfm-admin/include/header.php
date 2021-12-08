@@ -71,20 +71,20 @@ if ($setUp->getConfig("show_head") !== true && $fulldesc == false) {
                 <div class="head-banner text-<?php echo $logoAlignment; ?>">
                     <img alt="<?php print $setUp->getConfig('appname'); ?>" src="<?php print $logopath.$setUp->getConfig('logo'); ?>">
                 </div>
-                <div class="reward">
-                    <div class="wechat">
-                        <div href="https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/wxpay.png">
-                            <img src="https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/wxpay.png" alt="">
-                        </div>
-                        <p>微信打赏</p>
-                    </div>
-                    <div class="alipay">
-                        <div href="https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/alipay.png">
-                            <img src="https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/alipay.png" alt="">
-                        </div>
-                        <p>支付宝打赏</p>
-                    </div>
-                </div>
+<!--                <div class="reward">-->
+<!--                    <div class="wechat">-->
+<!--                        <div href="https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/wxpay.png">-->
+<!--                            <img src="https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/wxpay.png" alt="">-->
+<!--                        </div>-->
+<!--                        <p>微信打赏</p>-->
+<!--                    </div>-->
+<!--                    <div class="alipay">-->
+<!--                        <div href="https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/alipay.png">-->
+<!--                            <img src="https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/alipay.png" alt="">-->
+<!--                        </div>-->
+<!--                        <p>支付宝打赏</p>-->
+<!--                    </div>-->
+<!--                </div>-->
                 <script>
                     document.querySelector(".head-banner > img").onclick = function() {
                         

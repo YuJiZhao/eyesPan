@@ -33,6 +33,7 @@ require_once 'vfm-admin/include/head.php';
     } ?>
     <link rel="stylesheet" href="vfm-admin/css/font-awesome.min.css">
     <link rel="stylesheet" href="vfm-admin/skins/<?php print $setUp->getConfig('skin') ?>">
+    <link rel="stylesheet" href="vfm-admin/css/index.css">
     <script type="text/javascript" src="vfm-admin/js/jquery-1.12.4.min.js"></script>
     <!--[if lt IE 9]>
     <script src="vfm-admin/js/html5.js" type="text/javascript"></script>
