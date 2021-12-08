@@ -36,60 +36,9 @@ if ($setUp->getConfig("show_head") !== true && $fulldesc == false) {
                     $logopath = "vfm-admin/images/";
                 }
                 ?>
-                <style>
-                    .head-banner > img:hover {
-                        cursor: pointer;
-                    }
-                    .reward {
-                        position: absolute;
-                        top: 20%;
-                        left: 31%;
-                        width: 38%;
-                        height: 17%;
-                        padding: 1.5%;
-                        border-radius: 8px;
-                        /* background-color: red; */
-                        background-color: #F5F5F5;
-                        display: flex;
-                        justify-content: space-between;
-                    }
-                    .reward > div {
-                        width: 45%;
-                        display: flex;
-                        flex-direction: column;
-                    }
-                    .reward > div > div {
-                        cursor: pointer;
-                        width: 100%;
-                    }
-                    .reward > div > p {
-                        text-align: center;
-                        margin-top: 5%;
-                    }
-                    
-                </style>
                 <div class="head-banner text-<?php echo $logoAlignment; ?>">
                     <img alt="<?php print $setUp->getConfig('appname'); ?>" src="<?php print $logopath.$setUp->getConfig('logo'); ?>">
                 </div>
-<!--                <div class="reward">-->
-<!--                    <div class="wechat">-->
-<!--                        <div href="https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/wxpay.png">-->
-<!--                            <img src="https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/wxpay.png" alt="">-->
-<!--                        </div>-->
-<!--                        <p>微信打赏</p>-->
-<!--                    </div>-->
-<!--                    <div class="alipay">-->
-<!--                        <div href="https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/alipay.png">-->
-<!--                            <img src="https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/alipay.png" alt="">-->
-<!--                        </div>-->
-<!--                        <p>支付宝打赏</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-                <script>
-                    document.querySelector(".head-banner > img").onclick = function() {
-                        
-                    }
-                </script>
             <?php
             } 
             /**

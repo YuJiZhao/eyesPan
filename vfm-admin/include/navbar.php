@@ -136,6 +136,91 @@ if ($setUp->showLangMenu()) { ?>
                         <span>关于作者</span>
                     </a>
                 </li>
+                <style>
+                    .mask {
+                        position: fixed;
+                        z-index: 99998;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        display: none;
+                    }
+                    .reward {
+                        position: fixed;
+                        z-index: 99999;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 40%;
+                        max-height: 30vw;
+                        padding: 1.5%;
+                        border-radius: 8px;
+                        background-color: #F5F5F5;
+                        display: none;
+                        flex-direction: column;
+
+                    }
+                    .reward > .box {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                    }
+                    .reward > .box > div {
+                        display: flex;
+                        flex-direction: column;
+                        width: 45%;
+                    }
+                    .reward > .box > div > div {
+                        height: 100%;
+                    }
+                    .reward > .box > div > p {
+                        text-align: center;
+                    }
+                    .reward > .box > div > div > img:hover {
+                        cursor: pointer;
+                    }
+                    .reward > .speech {
+                        text-align: center;
+                    }
+                </style>
+                <div class="mask"></div>
+                <div class="reward">
+                    <div class="box">
+                        <div class="wechat">
+                            <div>
+                                <img src="https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/wxpay.png" alt="" onclick="window.open('https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/wxpay.png')">
+                            </div>
+                            <p>微信</p>
+                        </div>
+                        <div class="alipay">
+                            <div>
+                                <img src="https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/alipay.png" alt="" onclick="window.open('https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/wxpay.png')">
+                            </div>
+                            <p>支付宝</p>
+                        </div>
+                    </div>
+                    <div class="speech">
+                        生活不易，如果觉得eye云盘帮到你的话就打赏作者一包辣条吧
+                    </div>
+                </div> 
+                <li>
+                    <a class="donation" href="javascript:;" style="cursor: pointer;">
+                        <i class="fa fa-cny fa-fw"></i>
+                        <span>捐赠</span>
+                    </a>
+                </li>
+                <script>
+                    document.querySelector(".donation").onclick = function() {
+                        document.querySelector(".mask").style.display = "block";
+                        document.querySelector(".reward").style.display = "flex";
+                    }
+                    document.querySelector(".mask").onclick = function() {
+                        document.querySelector(".mask").style.display = "none";
+                        document.querySelector(".reward").style.display = "none";
+                    }
+                </script>
     <?php
 } ?>
             </ul>
