@@ -236,10 +236,16 @@
   'users_updated' => 'ユーザーを更新しました',
   'view' => 'ビュー',
   'wrong_captcha' => 'CAPTCHAが間違っています',
+  'wrong_password' => 'パスワードエラー',
   'wrong_pass' => '認証に失敗しました',
   'your_email' => 'E-mail',
   'OK' => 'OK',
   'CANCEL' => 'キャンセル',
   'CONFIRM' => '確認',
   'zip_multiple_files' => 'Zip multiple files ',
+  'about_author' => '作者について',
+  'donation' => '寄付する',
+  'wepay' => '微信',
+  'alipay' => 'アリペイ',
+  'speech' => '生活は容易ではありません。eye雲盤があなたを助けてくれると思ったら、作者にビスケットをあげましょう。 '
 );

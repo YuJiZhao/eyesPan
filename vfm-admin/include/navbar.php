@@ -133,7 +133,7 @@ if ($setUp->showLangMenu()) { ?>
                 <li>
                     <a href="https://blog.bugheaven.top" target="_blank">
                         <i class="fa fa-drupal fa-fw"></i>
-                        <span>关于作者</span>
+                        <span><?php echo $encodeExplorer->getString("about_author"); ?></span>
                     </a>
                 </li>
                 <style>
@@ -192,23 +192,27 @@ if ($setUp->showLangMenu()) { ?>
                             <div>
                                 <img src="https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/wxpay.png" alt="" onclick="window.open('https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/wxpay.png')">
                             </div>
-                            <p>微信</p>
+                            <p>
+                                <?php echo $encodeExplorer->getString("wepay"); ?>
+                            </p>
                         </div>
                         <div class="alipay">
                             <div>
                                 <img src="https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/alipay.png" alt="" onclick="window.open('https://cdn.jsdelivr.net/gh/YuJiZhao/picbed/blog/other/wxpay.png')">
                             </div>
-                            <p>支付宝</p>
+                            <p>
+                                <?php echo $encodeExplorer->getString("alipay"); ?>
+                            </p>
                         </div>
                     </div>
                     <div class="speech">
-                        生活不易，如果觉得eye云盘帮到你的话就打赏作者一包辣条吧
+                        <?php echo $encodeExplorer->getString("speech"); ?>
                     </div>
                 </div> 
                 <li>
                     <a class="donation" href="javascript:;" style="cursor: pointer;">
                         <i class="fa fa-cny fa-fw"></i>
-                        <span>捐赠</span>
+                        <span><?php echo $encodeExplorer->getString("donation"); ?></span>
                     </a>
                 </li>
                 <script>

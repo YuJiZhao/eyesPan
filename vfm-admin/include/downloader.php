@@ -171,7 +171,7 @@ if ($getfilelist && file_exists('vfm-admin/shorten/'.$getfilelist.'.json')) {
                     if ($postpass && $passpass !== true) { ?>
                         <script type="text/javascript">
                             var $error2 = $('<div class="alert-wrap"><div class="response nope alert-dismissible alert" role="alert">'
-                            + ' <?php echo $encodeExplorer->getString("wrong_captcha"); ?>'
+                            + ' <?php echo $encodeExplorer->getString("wrong_password"); ?>'
                             + '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'
                             + '<span aria-hidden="true">&times;</span></button></div></div>');
                             $('#error').append($error2);

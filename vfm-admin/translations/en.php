@@ -239,10 +239,16 @@
   'video_player' => 'Video player',
   'view' => 'View',
   'wrong_captcha' => 'wrong CAPTCHA',
+  'wrong_password' => 'wrong PASSWORD',
   'wrong_pass' => 'Authentication failed',
   'your_email' => 'Your E-mail',
   'OK' => 'OK',
   'CANCEL' => 'Cancel',
   'CONFIRM' => 'OK',
   'zip_multiple_files' => 'Zip multiple files',
+  'about_author' => 'author',
+  'donation' => 'donation',
+  'wepay' => 'wepay',
+  'alipay' => 'alipay',
+  'speech' => 'Life is not easy. If you think eye cloud disk can help you, give the author a packet of spicy strips '
 );
